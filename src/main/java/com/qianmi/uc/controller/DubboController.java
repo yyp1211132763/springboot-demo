@@ -37,6 +37,8 @@ public class DubboController {
     @RequestMapping("/hello3/{adminid}/{storename}")
     public  String hello3(@PathVariable String adminid, @PathVariable String storename) throws Exception{
         String rtn = dubboService.setName(adminid, storename);
-        return storename + " hello word!";
+        return storename + " hello word!+112323";
     }
+
+
 }
