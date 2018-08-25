@@ -16,5 +16,7 @@ public class SpringBootTestApplication {
 		ConfigurableApplicationContext context = SpringApplication.run(SpringBootTestApplication.class, args);
 
 		System.out.println(context.getBean(TestProperties.class).getPwd());
+
+		System.out.println("1232323");
 	}
 }
