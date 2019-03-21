@@ -17,6 +17,5 @@ public class SpringBootTestApplication {
 
 		System.out.println(context.getBean(TestProperties.class).getPwd());
 
-		System.out.println("1232323");
 	}
 }

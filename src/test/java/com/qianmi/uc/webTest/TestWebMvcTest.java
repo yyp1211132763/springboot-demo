@@ -29,7 +29,7 @@ public class TestWebMvcTest {
 
     @Test public void test() throws Exception{
         mockMvc.perform(MockMvcRequestBuilders.get("/hello")).andExpect(
-                MockMvcResultMatchers.status().isOk()).andExpect(MockMvcResultMatchers.content().string("user home")
+                MockMvcResultMatchers.status().isOk()).andExpect(MockMvcResultMatchers.content().string("yyp hello word!")
         );
 
     }

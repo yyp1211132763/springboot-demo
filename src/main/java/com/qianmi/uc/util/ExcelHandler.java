@@ -110,12 +110,12 @@ public class ExcelHandler {
 
     public static void main(String[] args) {
         ExcelHandler handler=new ExcelHandler();
-        List a=new ArrayList<>();
-        a.add("123");
-        a.add("456");
-        handler.createExcel(a,"E://test.xlsx");
+//        List a=new ArrayList<>();
+//        a.add("123");
+//        a.add("456");
+//        handler.createExcel(a,"E://phones0320.xlsx");
 
-        System.out.println(handler.parseExcel("E://test.xlsx",""));
+        System.out.println(handler.parseExcel("E://1111.xlsx",""));
     }
 
 }

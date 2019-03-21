@@ -5,9 +5,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.File;
+import java.net.URL;
+
 
 @RestController
 public class HelloController {
+
+
 
 
     @Autowired
@@ -17,6 +22,22 @@ public class HelloController {
     public  String hello() throws Exception{
         System.out.println("zhixing");
         return testProperties.getUser() + " hello word!";
+    }
+
+
+    @RequestMapping("/testFile")
+    public  void testFile() throws Exception{
+        File file=new File("classpath:application.properties");
+        System.out.println(file.exists());
+        URL url = this.getClass().getClassLoader().getResource("ccc.txt");
+        File file1 = new File(url.getFile());
+
+    }
+
+   @RequestMapping("/test1")
+    public  String test1() throws Exception{
+
+       return "";
     }
 
 //    @RequestMapping("/hello1/{myName}")
